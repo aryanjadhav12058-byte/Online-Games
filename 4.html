@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benefits & Safety | Online Gaming</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    background:#0d47a1;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffeb3b;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(rgba(13,71,161,.8),rgba(13,71,161,.8)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:12px 28px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#e68900;
+}
+
+/* Section */
+
+section{
+    width:90%;
+    margin:40px auto;
+}
+
+h2{
+    color:#0d47a1;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* Cards */
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-left:20px;
+}
+
+.card li{
+    margin:10px 0;
+}
+
+/* Safety */
+
+.safety{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
+
+.safety ul{
+    margin-left:30px;
+}
+
+.safety li{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:8px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">Online Gaming</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="benefits.html">Benefits</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<div class="hero">
+
+<h1>Benefits of Online Gaming</h1>
+
+<p>Online games are not only entertaining but also educational when played responsibly.</p>
+
+<button onclick="showMessage()">Know More</button>
+
+</div>
+
+<!-- Benefits -->
+
+<section>
+
+<h2>Gaming Benefits</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>📚 Learning Skills</h3>
+<ul>
+<li>Critical Thinking</li>
+<li>Creativity</li>
+<li>Quick Decision Making</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🤝 Social Benefits</h3>
+<ul>
+<li>Teamwork</li>
+<li>Communication</li>
+<li>Making New Friends</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🧠 Mental Benefits</h3>
+<ul>
+<li>Better Memory</li>
+<li>Improved Focus</li>
+<li>Stress Relief</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- Safety -->
+
+<section>
+
+<h2>Safe Gaming Tips</h2>
+
+<div class="safety">
+
+<ul>
+<li>🎮 Play for a limited time.</li>
+<li>🔒 Never share personal information.</li>
+<li>🔑 Use strong passwords.</li>
+<li>⚠️ Avoid clicking unknown links.</li>
+<li>🚫 Report abusive players.</li>
+<li>☕ Take regular breaks while gaming.</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p><strong>Name:</strong> Aryan Jadhav</p>
+
+<p><strong>College:</strong> ABIT</p>
+
+<p><strong>Course:</strong> CO</p>
+
+<p><strong>Date:</strong> 29/6/2026</p>
+
+<p>© 2026 Online Gaming Website. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+function showMessage(){
+    alert("Play responsibly! Gaming is fun when balanced with study, exercise, and rest.");
+}
+</script>
+
+</body>
+</html>

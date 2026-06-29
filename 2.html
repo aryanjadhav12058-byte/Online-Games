@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Online Games</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Navigation */
+
+nav{
+    background:#1e3a8a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+    color:white;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.hero button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#2563eb;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:yellow;
+}
+
+/* Section */
+
+section{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+/* Advantages */
+
+.advantages{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.advantages ul{
+    padding-left:25px;
+    line-height:2;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:8px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<div class="logo">Online Games</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="benefits.html">Benefits</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+<h1>About Online Games</h1>
+<p>Play, Compete, Learn and Connect with Players Worldwide.</p>
+
+<button onclick="showMessage()">Explore More</button>
+
+</div>
+
+<section>
+
+<h2>What are Online Games?</h2>
+
+<p>
+Online games are video games that require an internet connection to play.
+Players can compete or cooperate with others from different parts of the world in real time.
+Online gaming offers exciting gameplay, communication, teamwork, and entertainment for players of all ages.
+</p>
+
+</section>
+
+<section>
+
+<h2>Types of Online Games</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Action Games</h3>
+<ul>
+<li>Fast-paced gameplay</li>
+<li>Shooting challenges</li>
+<li>Fighting missions</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Adventure Games</h3>
+<ul>
+<li>Story-based missions</li>
+<li>Puzzle solving</li>
+<li>Exploration</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Sports Games</h3>
+<ul>
+<li>Cricket</li>
+<li>Football</li>
+<li>Racing</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Strategy Games</h3>
+<ul>
+<li>Planning</li>
+<li>Decision Making</li>
+<li>Resource Management</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Multiplayer Games</h3>
+<ul>
+<li>Team Battles</li>
+<li>Online Competitions</li>
+<li>Global Players</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Advantages of Online Games</h2>
+
+<div class="advantages">
+
+<ul>
+<li>✔ Improves problem-solving skills</li>
+<li>✔ Enhances teamwork</li>
+<li>✔ Boosts concentration</li>
+<li>✔ Provides entertainment</li>
+<li>✔ Connects players worldwide</li>
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<p><strong>Name:</strong> Aryan Jadhav</p>
+
+<p><strong>College:</strong> ABIT</p>
+
+<p><strong>Course:</strong> CO</p>
+
+<p><strong>Date:</strong> 29/06/2026</p>
+
+<p>© 2026 Online Games Website | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function showMessage(){
+    alert("Welcome! Explore the exciting world of Online Games.");
+}
+
+</script>
+
+</body>
+</html>
