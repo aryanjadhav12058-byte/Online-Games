@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Games - Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef4ff;
+    color:#333;
+}
+
+/* Navigation Bar */
+nav{
+    background:#1e3a8a;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.hero h2{
+    margin-top:35px;
+    color:#ffd700;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+button{
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    margin:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e65100;
+    transform:scale(1.05);
+}
+
+/* Highlights */
+.container{
+    width:85%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.container h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:6px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">🎮 Online Games</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+
+<h1>Welcome to the World of Online Games</h1>
+
+<p>
+Online games have become one of the most popular forms of entertainment.
+Millions of people around the world play games on computers,
+smartphones, and gaming consoles.
+Online gaming provides fun, competition, teamwork, and learning opportunities.
+</p>
+
+<h2>"Play, Learn, Compete, and Connect with Online Games!"</h2>
+
+<div class="buttons">
+<button onclick="playNow()">Play Now</button>
+<button onclick="exploreGames()">Explore Games</button>
+</div>
+
+</section>
+
+<!-- Highlights -->
+<div class="container">
+
+<h2>Highlights</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎮 Popular Games</h3>
+<p>Explore popular online games played by millions worldwide.</p>
+</div>
+
+<div class="card">
+<h3>🕹 Game Genres</h3>
+<p>Learn about action, racing, adventure, sports, and strategy games.</p>
+</div>
+
+<div class="card">
+<h3>⭐ Gaming Benefits</h3>
+<p>Discover how online games improve teamwork, creativity, and problem-solving.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Safe Gaming</h3>
+<p>Understand safe gaming practices and protect your online account.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Gaming Trends</h3>
+<p>Stay updated with the latest online gaming technologies and trends.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+
+<p><strong>Student Name:</strong> Aryan Jadhav</p>
+<p><strong>College:</strong> ABIT</p>
+<p><strong>Course:</strong> CO</p>
+<p><strong>Date:</strong> 29/06/2026</p>
+
+<p>© 2026 Online Games. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+function playNow(){
+    alert("Welcome! Let's start playing online games.");
+}
+
+function exploreGames(){
+    alert("Explore exciting online games and discover new adventures!");
+}
+</script>
+
+</body>
+</html>
